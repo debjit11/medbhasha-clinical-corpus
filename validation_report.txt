@@ -1,0 +1,53 @@
+MedBhasha Annotation Validation Report
+=============================================
+Input file: Annotated_corpus.csv
+Annotation scheme: BIO
+Notes: 240
+Tokens/rows: 3192
+Errors: 0
+Warnings: 0
+
+TAG COUNTS
+------------------------------
+B-BODY_SITE: 80
+B-DIAGNOSIS: 72
+B-DOSAGE: 32
+B-MEDICATION: 36
+B-NEGATION_UNCERTAINTY: 72
+B-PROCEDURE: 36
+B-SYMPTOM: 116
+B-TEMPORAL: 72
+B-TEST: 103
+B-TEST_RESULT: 64
+I-DIAGNOSIS: 12
+I-DOSAGE: 32
+I-NEGATION_UNCERTAINTY: 20
+I-SYMPTOM: 9
+I-TEMPORAL: 182
+I-TEST: 75
+O: 2179
+
+ENTITY COUNTS
+------------------------------
+BODY_SITE: 80
+DIAGNOSIS: 72
+DOSAGE: 32
+MEDICATION: 36
+NEGATION_UNCERTAINTY: 72
+PROCEDURE: 36
+SYMPTOM: 116
+TEMPORAL: 72
+TEST: 103
+TEST_RESULT: 64
+
+ERRORS
+------------------------------
+No errors found.
+
+WARNINGS
+------------------------------
+No warnings found.
+
+FINAL RESULT
+------------------------------
+PASS

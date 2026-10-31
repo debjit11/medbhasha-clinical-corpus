@@ -237,13 +237,4 @@ The precise checks depend on the implementation of `validate.py`. Structural val
 - Integrate corpus validation into an NLP data preparation pipeline.
 - Develop annotation quality metrics and dataset statistics.
 
-## 👨‍💻 Author
 
-**Debjit Das**
-
-B.Tech in Computer Science and Engineering  
-Specialization: Artificial Intelligence and Machine Learning
-
-## 📜 License
-
-Follow the licensing terms and data-use requirements specified by the MedBhasha hackathon organizers and the original dataset providers.

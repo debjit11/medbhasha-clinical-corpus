@@ -221,7 +221,6 @@ The precise checks depend on the implementation of `validate.py`. Structural val
 - A PASS result does not guarantee complete compliance with all dataset or hackathon requirements.
 - If the hackathon organizers require their official validator, use that version for the final submission.
 
-
 ## 📚 Official Resources
 
 - [MedBhasha Resources](https://github.com/pabitracsers/COMSYS-Hackathon-8/tree/main/MedBhasha-Resources)

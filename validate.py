@@ -40,7 +40,6 @@ def parse_tag(tag):
     return prefix, entity_type
 
 
-
 def validate(input_file, scheme, report_file, separator=","):
     errors = []
     warnings = []

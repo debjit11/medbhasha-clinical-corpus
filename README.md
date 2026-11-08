@@ -214,6 +214,7 @@ The precise checks depend on the implementation of `validate.py`. Structural val
 
 ## ⚠️ Limitations
 
+
 - The validator checks annotation structure, not the medical correctness of each label.
 - It does not train or evaluate an NLP model.
 - It does not automatically correct invalid annotations.

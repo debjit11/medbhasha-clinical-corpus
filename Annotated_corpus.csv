@@ -311,7 +311,6 @@ syn023,ফল,O
 syn023,পজিটিভ,B-TEST_RESULT
 syn023,দেখানো,O
 syn023,হয়েছে,O
-
 syn023,।,O
 syn024,রোগী,O
 syn024,পেট,B-BODY_SITE

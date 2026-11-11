@@ -343,6 +343,7 @@ syn025,পারে,O
 syn025,বলে,O
 syn025,জানিয়েছেন,O
 syn025,।,O
+
 syn026,রোগীর,O
 syn026,উচ্চ,B-DIAGNOSIS
 syn026,রক্তচাপ,I-DIAGNOSIS

@@ -3,3 +3,12 @@ numpy
 matplotlib
 seaborn 
 plotly
+ipykernel
+torch
+transformers>=4.46.0
+datasets
+accelerate
+pandas
+scikit-learn
+seqeval
+sentencepiece

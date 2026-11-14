@@ -1,0 +1,9 @@
+﻿Metric,Value
+Total CSV rows,10743.0
+Usable token rows,10743.0
+Unique clinical notes,534.0
+Unique tokens (vocabulary size),646.0
+Average tokens per note,20.12
+Median tokens per note,16.0
+Shortest note (tokens),6.0
+Longest note (tokens),87.0

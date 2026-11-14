@@ -1,0 +1,28 @@
+MedBhasha Bengali Clinical Corpus Analytics
+================================================
+
+BASIC STATISTICS
+                         Metric    Value
+                 Total CSV rows 10743.00
+              Usable token rows 10743.00
+          Unique clinical notes   534.00
+Unique tokens (vocabulary size)   646.00
+        Average tokens per note    20.12
+         Median tokens per note    16.00
+         Shortest note (tokens)     6.00
+          Longest note (tokens)    87.00
+
+ENTITY FREQUENCY
+              entity  mention_count  percentage
+             SYMPTOM            530       21.70
+            TEMPORAL            423       17.32
+                TEST            329       13.47
+         TEST_RESULT            244        9.99
+NEGATION_UNCERTAINTY            219        8.97
+           DIAGNOSIS            169        6.92
+          MEDICATION            166        6.80
+           BODY_SITE            153        6.27
+              DOSAGE            127        5.20
+           PROCEDURE             82        3.36
+
+BIO sequence issues detected: 0

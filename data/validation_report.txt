@@ -1,0 +1,57 @@
+MedBhasha Annotation Validation Report
+=============================================
+Input file: D:\Users\DEBJIT DAS\Outliers_MedBhasha\data\Annotated_Corpus.csv
+Annotation scheme: BIO
+Notes: 534
+Tokens/rows: 10743
+Errors: 0
+Warnings: 0
+
+TAG COUNTS
+------------------------------
+B-BODY_SITE: 153
+B-DIAGNOSIS: 169
+B-DOSAGE: 127
+B-MEDICATION: 166
+B-NEGATION_UNCERTAINTY: 219
+B-PROCEDURE: 82
+B-SYMPTOM: 530
+B-TEMPORAL: 423
+B-TEST: 329
+B-TEST_RESULT: 244
+I-BODY_SITE: 15
+I-DIAGNOSIS: 63
+I-DOSAGE: 127
+I-MEDICATION: 8
+I-NEGATION_UNCERTAINTY: 39
+I-PROCEDURE: 5
+I-SYMPTOM: 77
+I-TEMPORAL: 709
+I-TEST: 267
+I-TEST_RESULT: 110
+O: 6881
+
+ENTITY COUNTS
+------------------------------
+BODY_SITE: 153
+DIAGNOSIS: 169
+DOSAGE: 127
+MEDICATION: 166
+NEGATION_UNCERTAINTY: 219
+PROCEDURE: 82
+SYMPTOM: 530
+TEMPORAL: 423
+TEST: 329
+TEST_RESULT: 244
+
+ERRORS
+------------------------------
+No errors found.
+
+WARNINGS
+------------------------------
+No warnings found.
+
+FINAL RESULT
+------------------------------
+PASS

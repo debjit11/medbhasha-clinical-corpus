@@ -1,227 +1,297 @@
-# MedBhasha: Bengali Clinical NLP Corpus Validation
+# MedBhasha: Bengali Clinical NLP
 
-A Python-based validation tool for checking the structural consistency of an annotated Bengali clinical Natural Language Processing (NLP) corpus using BIO or BIOES tagging schemes.
-
+**An Integrated Bengali Clinical Natural Language Processing Pipeline for Named Entity Recognition, Clinical Text Clustering, Healthcare Analytics, and Retrieval-Augmented Generation.**
 
 ## 📌 Project Overview
 
-MedBhasha focuses on Bengali clinical text annotation and Named Entity Recognition (NER). This project provides a validation script to check whether an annotated corpus follows the expected CSV structure, uses valid entity tags, and maintains consistent annotation sequences.
+MedBhasha is a Bengali Clinical NLP project designed to process, analyze, and extract meaningful medical information from Bengali clinical text.
 
-The validator processes an annotated CSV file and generates a `validation_report.txt` file containing corpus statistics, tag counts, entity counts, validation errors, warnings, and the final validation result.
+The project focuses on building an NLP pipeline using an annotated Bengali clinical corpus. It combines Named Entity Recognition (NER), unsupervised text clustering, clinical data analytics, and Retrieval-Augmented Generation (RAG) to explore how NLP and AI can support structured understanding of Bengali healthcare documentation.
 
-## 🎯 Objectives
+The project also includes a corpus validation module to ensure annotation consistency and data quality.
 
-- Validate the structure of an annotated clinical corpus.
-- Check the presence of required CSV columns.
+## 🎯 Project Objectives
+
+- Develop a Bengali clinical Named Entity Recognition system.
+- Identify important medical entities from Bengali clinical text.
+- Group similar clinical notes using text embeddings and clustering.
+- Generate useful statistics and insights from the clinical corpus.
+- Build a corpus-grounded RAG system for answering clinical questions.
+- Validate annotated data using BIO/BIOES tagging schemes.
+- Explore NLP-based approaches for Bengali healthcare information processing.
+
+## 🚀 Key Features
+
+### 1. Named Entity Recognition (NER)
+
+A token-classification-based NER system designed to identify medical entities from Bengali clinical text.
+
+**Key capabilities:**
+- Bengali clinical entity extraction.
+- BIO-based token classification.
+- Pretrained BanglaBERT model fine-tuning.
+- Training and validation workflow.
+- Model evaluation and prediction.
+- Saving trained model checkpoints.
+- Extracting entity predictions with confidence scores.
+
+**Supported entity categories:**
+
+| Entity | Description |
+|---|---|
+| DIAGNOSIS | Medical diagnoses |
+| SYMPTOM | Patient symptoms |
+| MEDICATION | Medicines and drugs |
+| DOSAGE | Medication dosage information |
+| TEST | Medical tests and investigations |
+| TEST_RESULT | Medical test results |
+| BODY_SITE | Anatomical locations |
+| PROCEDURE | Medical procedures |
+| TEMPORAL | Time-related expressions |
+| NEGATION_UNCERTAINTY | Negation or uncertainty expressions |
+
+**Base model:** `csebuetnlp/banglabert`
+
+### 2. Clinical Text Clustering
+
+An unsupervised machine learning module that groups similar Bengali clinical notes based on their semantic content.
+
+**Key capabilities:**
+- Generate multilingual sentence embeddings.
+- Apply K-Means clustering.
+- Calculate silhouette scores.
+- Extract important cluster keywords using TF-IDF.
+- Visualize clusters using dimensionality reduction.
+- Generate cluster summaries.
+
+**Technologies:**
+- Sentence Transformers
+- Scikit-learn
+- K-Means
+- TF-IDF
+- PCA
+- Matplotlib
+
+**Embedding model:** `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
+
+### 3. Clinical Data Analytics
+
+A data analysis module that explores the annotated clinical corpus and generates useful statistical insights.
+
+**Key capabilities:**
+- Total clinical notes and token counts.
+- Entity distribution and frequency analysis.
+- BIO tag distribution.
+- Most frequently occurring clinical terms.
+- Entity co-occurrence analysis.
+- Clinical corpus statistics.
+- Visualization of entity distributions and patterns.
+- Analysis of clustering results when available.
+
+**Technologies:**
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+### 4. Retrieval-Augmented Generation (RAG)
+
+A corpus-grounded retrieval system designed to retrieve relevant clinical information from the project's own Bengali annotated corpus.
+
+The system uses semantic embeddings to identify relevant clinical notes and provide evidence-based responses to queries.
+
+**Key capabilities:**
+- Semantic search across clinical notes.
+- Retrieve relevant passages using sentence embeddings.
+- Similarity-based document retrieval.
+- Preserve original note IDs for traceability.
+- Extract relevant clinical entities from retrieved evidence.
+- Generate evidence-grounded answers.
+- Export retrieval results in CSV and JSONL formats.
+
+**Technologies:**
+- Sentence Transformers
+- Scikit-learn
+- Cosine Similarity
+- Pandas
+
+**Important:** The default RAG workflow uses the project's own corpus for retrieval and evidence-based answer construction. It does not depend on general web search or external document retrieval.
+
+An optional local LLM integration may be used only where permitted by the competition rules.
+
+### 5. Corpus Validation
+
+A Python-based validation module that checks the structural consistency of the annotated Bengali clinical dataset.
+
+**Key capabilities:**
+- Validate required CSV columns.
 - Identify invalid entity tags.
-- Detect inconsistent BIO or BIOES annotation sequences.
-- Count annotated notes, tokens, tags, and entity beginnings.
-- Generate a validation report automatically.
-- Support corpus quality checks before submission.
+- Check BIO/BIOES annotation sequences.
+- Count unique clinical notes and tokens.
+- Generate tag and entity statistics.
+- Identify annotation errors and warnings.
+- Automatically generate validation reports.
+
+**Supported annotation schemes:**
+- BIO
+- BIOES
 
 ## 🛠️ Technologies Used
 
-- **Python 3**
-- CSV processing
-- `argparse` for command-line arguments
-- `collections.Counter` for counting tags and entities
-- `pathlib` for file handling
-
-The validation script uses Python's standard library, so no third-party packages are required.
-
-## 📂 Project Structure
-
-```text
-MedBhasha/
-│
-├── validate.py
-├── Annotated_corpus.csv
-├── validation_report.txt
-└── README.md
-```
-
-| File | Description |
+| Category | Technologies |
 |---|---|
-| `validate.py` | Python script for corpus validation |
-| `Annotated_corpus.csv` | Annotated clinical text dataset |
-| `validation_report.txt` | Automatically generated validation report |
-| `README.md` | Project documentation |
+| Programming Language | Python |
+| NLP | Hugging Face Transformers |
+| Bengali Language Model | BanglaBERT |
+| Deep Learning | PyTorch |
+| Sentence Embeddings | Sentence Transformers |
+| Machine Learning | Scikit-learn |
+| Clustering | K-Means |
+| Text Analysis | TF-IDF |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Retrieval | Cosine Similarity |
+| Data Format | CSV, JSONL |
+| Development Environment | VS Code, Jupyter Notebook |
+
+
+```
 
 ## 📊 Dataset Format
 
-The input CSV file must contain the following columns:
+The annotated corpus is stored in CSV format.
+
+The dataset contains the following required columns:
 
 | Column | Description |
 |---|---|
-| `note_id` | Identifier of the clinical note |
-| `token` | Individual word or token from the clinical text |
+| `note_id` | Unique identifier of a clinical note |
+| `token` | Individual word or token |
 | `tag` | Annotation label assigned to the token |
 
-### Example
+**Example:**
 
 ```csv
 note_id,token,tag
 N001,রোগী,O
-N001,জ্বরে,B-SYMPTOM
-N001,ভুগছেন,O
+N001,জ্বর,B-SYMPTOM
+N001,ও,O
+N001,কাশি,B-SYMPTOM
 N002,প্যারাসিটামল,B-MEDICATION
-N002,খাবেন,O
+N002,৫০০,B-DOSAGE
+N002,mg,I-DOSAGE
 ```
 
 The example is illustrative. Actual annotations should follow the project's annotation guidelines.
 
-## 🏷️ Supported Entity Categories
-
-The validator recognizes the following entity types:
-
-- `DIAGNOSIS` — Medical diagnoses
-- `SYMPTOM` — Patient symptoms
-- `MEDICATION` — Medicines and drugs
-- `DOSAGE` — Medication dosage information
-- `TEST` — Medical tests and investigations
-- `TEST_RESULT` — Results of medical tests
-- `BODY_SITE` — Body parts or anatomical locations
-- `PROCEDURE` — Medical procedures
-- `TEMPORAL` — Time-related expressions
-- `NEGATION_UNCERTAINTY` — Negation or uncertainty expressions
-
-## 🔖 Annotation Schemes
-
-### BIO Scheme
-
-The BIO scheme uses three tag prefixes:
-
-- `B-` — Beginning of an entity
-- `I-` — Inside or continuation of an entity
-- `O` — Outside any entity
-
-Example:
-
-```text
-প্যারাসিটামল  B-MEDICATION
-খাবেন          O
-```
-
-### BIOES Scheme
-
-The BIOES scheme uses five tag prefixes:
-
-- `B-` — Beginning of an entity
-- `I-` — Inside an entity
-- `E-` — End of an entity
-- `S-` — A single-token entity
-- `O` — Outside any entity
-
-Choose the scheme that matches the annotations in your dataset.
-
 ## ⚙️ Installation and Setup
 
-### 1. Install Python
-
-Install Python 3 if it is not already installed.
-
-Check your Python version:
+### 1. Clone the Repository
 
 ```bash
-python --version
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd Outliers_MedBhasha
 ```
 
-### 2. Clone or Download the Project
-
-Download the project files and open the project folder in VS Code.
-
-### 3. Set Up a Virtual Environment (Optional)
-
-Create a virtual environment:
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate it on Windows:
+Activate on Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-No additional Python packages are required for the custom validator described in this project.
-
-## ▶️ Usage
-
-Open the VS Code terminal in the project directory.
-
-### Validate Using BIO
+### 3. Install Dependencies
 
 ```bash
-python validate.py --input Annotated_corpus.csv --scheme BIO
+pip install -r requirements.txt
 ```
 
-### Validate Using BIOES
+For notebook execution:
 
 ```bash
-python validate.py --input Annotated_corpus.csv --scheme BIOES
+pip install jupyter ipykernel
 ```
 
-### Specify a Custom Report Filename
+**Note:** Model training may require downloading pretrained model weights and access to sufficient GPU or CPU resources. The actual dependencies should be maintained in `requirements.txt`.
+
+## ▶️ Project Workflow
+
+The project follows this general workflow:
+
+```text
+       Bengali Clinical Corpus
+                  |
+                  v
+          Corpus Validation
+                  |
+                  v
+          Annotated Dataset
+                  |
+       +----------+----------+
+       |          |          |
+       v          v          v
+      NER     Clustering  Analytics
+       |          |          |
+       v          v          v
+ Entity       Similar      Clinical
+Extraction     Notes       Insights
+       |
+       +----------+
+                  |
+                  v
+             RAG System
+                  |
+                  v
+       Relevant Clinical Evidence
+                  |
+                  v
+          Grounded Answers
+```
+
+## 📓 Running the Notebooks
+
+Open the project in VS Code and launch Jupyter notebooks.
 
 ```bash
-python validate.py --input Annotated_corpus.csv --scheme BIO --report my_report.txt
+jupyter notebook
 ```
 
-### Specify a CSV Delimiter
+Run the notebooks in the following order, depending on the task:
 
-For a semicolon-separated file:
+1. **Corpus Validation** – Check annotation quality and dataset structure.
+2. **NER** – Train the Bengali clinical NER model and generate predictions.
+3. **Clustering** – Generate embeddings and group similar clinical notes.
+4. **Analytics** – Explore corpus statistics and entity distributions.
+5. **RAG** – Retrieve relevant clinical evidence and generate grounded answers.
 
-```bash
-python validate.py --input Annotated_corpus.csv --scheme BIO --sep ";"
-```
+Make sure the dataset paths and output directories are correctly configured before running each notebook.
 
-## 📄 Validation Report
+## 📄 Expected Outputs
 
-The script generates a text report containing:
-
-- Input filename and annotation scheme
-- Number of unique clinical notes
-- Number of processed rows or tokens
-- Tag frequency counts
-- Entity counts
-- Validation errors
-- Validation warnings
-- Final validation status
-
-The report is saved as `validation_report.txt` by default.
-
-### Understanding the Result
-
-**PASS:** No errors were detected by the checks implemented in the validator.
-
-**FAIL:** One or more validation errors were detected and should be reviewed.
-
-Warnings should also be reviewed, even when the final result is PASS.
-
-## 🔍 Validation Checks
-
-The custom validator checks:
-
-1. Required CSV columns are present.
-2. Note identifiers are not empty.
-3. Empty tokens are reported as warnings.
-4. Annotation tags use recognized entity types and prefixes.
-5. BIO or BIOES tag usage matches the selected scheme.
-6. Entity continuation and ending sequences are checked.
-7. Tag and entity counts are included in the report.
-
-The precise checks depend on the implementation of `validate.py`. Structural validation alone does not establish that clinical annotations are medically correct.
+| Component | Output |
+|---|---|
+| NER | Trained model, tokenizer, and `ner_predictions.csv` |
+| Clustering | `clinical_note_clusters.csv` and `cluster_summary.csv` |
+| Analytics | Corpus statistics, entity frequency tables, and visualizations |
+| RAG | Retrieved passages and evidence-grounded answers in CSV/JSONL |
+| Validation | `validation_report.txt` |
 
 ## ⚠️ Limitations
 
-
-- The validator checks annotation structure, not the medical correctness of each label.
-- It does not train or evaluate an NLP model.
-- It does not automatically correct invalid annotations.
-- It does not establish data privacy, consent, licensing, or source permissions.
-- A PASS result does not guarantee complete compliance with all dataset or hackathon requirements.
-- If the hackathon organizers require their official validator, use that version for the final submission.
+- Model performance depends on the quality and size of the annotated corpus.
+- Bengali clinical terminology and spelling variations can affect entity recognition.
+- Subword tokenization can affect entity boundary predictions.
+- Clustering quality depends on embedding quality and the selected number of clusters.
+- RAG answers are limited by the information available in the project's corpus.
+- Retrieved information should not be treated as a substitute for professional medical advice.
+- Corpus validation checks structural consistency, not medical correctness.
+- Model performance must be evaluated using appropriate test data before making accuracy claims.
 
 ## 📚 Official Resources
 
@@ -231,12 +301,23 @@ The precise checks depend on the implementation of `validate.py`. Structural val
 - [Data Collection Rules](https://github.com/pabitracsers/COMSYS-Hackathon-8/blob/main/MedBhasha-Resources/data_collection_rules.md)
 - [Worked Examples](https://github.com/pabitracsers/COMSYS-Hackathon-8/tree/main/MedBhasha-Resources/worked_example)
 
-## 🚀 Future Improvements
+## 🔮 Future Improvements
 
-- Add more comprehensive BIOES sequence validation.
-- Provide machine-readable JSON validation reports.
-- Add automated suggestions for common annotation errors.
-- Integrate corpus validation into an NLP data preparation pipeline.
-- Develop annotation quality metrics and dataset statistics.
+- Improve Bengali clinical NER performance.
+- Explore additional transformer-based architectures.
+- Improve entity boundary detection and token alignment.
+- Experiment with alternative clustering algorithms.
+- Develop interactive clinical analytics dashboards.
+- Improve semantic retrieval and RAG evaluation.
+- Explore local LLM-based Bengali clinical question answering.
+- Build a user-friendly interface for clinical text processing.
 
+## 👨‍💻 Contributors
 
+**Team Outliers – MedBhasha**
+
+Developed as part of the MedBhasha Bengali Clinical NLP hackathon initiative.
+
+---
+
+**MedBhasha – Exploring AI and NLP for Bengali Clinical Text Understanding.**

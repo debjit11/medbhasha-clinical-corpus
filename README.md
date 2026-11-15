@@ -2,6 +2,7 @@
 
 A Python-based validation tool for checking the structural consistency of an annotated Bengali clinical Natural Language Processing (NLP) corpus using BIO or BIOES tagging schemes.
 
+
 ## 📌 Project Overview
 
 MedBhasha focuses on Bengali clinical text annotation and Named Entity Recognition (NER). This project provides a validation script to check whether an annotated corpus follows the expected CSV structure, uses valid entity tags, and maintains consistent annotation sequences.

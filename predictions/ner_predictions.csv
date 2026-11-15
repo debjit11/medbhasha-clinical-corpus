@@ -1,0 +1,331 @@
+﻿note_id,entity_text,entity_type,confidence
+syn453,কিডনির পাথর,DIAGNOSIS,0.4779
+syn453,টা,MEDICATION,0.9173
+syn453,##মস,MEDICATION,0.8202
+syn453,##ুলো,MEDICATION,0.5143
+syn453,##সিন,MEDICATION,0.401
+syn453,০,DOSAGE,0.804
+syn453,.,DOSAGE,0.4196
+syn453,৪ মিগ্র,DOSAGE,0.6753
+syn453,##া,TEMPORAL,0.2151
+syn453,রাতে,TEMPORAL,0.9558
+syn453,দুই সপ্তাহ,TEMPORAL,0.9671
+syn453,ডাই,MEDICATION,0.9231
+syn453,##ক্ল,MEDICATION,0.7557
+syn453,##ো,MEDICATION,0.6547
+syn453,##ফে,MEDICATION,0.5186
+syn453,##নাক,DOSAGE,0.4067
+syn453,৫০ মিগ্র,DOSAGE,0.7368
+syn453,##া,TEMPORAL,0.1453
+syn453,দিনে দুইবার,TEMPORAL,0.9666
+syn453,পাঁচ দিন,TEMPORAL,0.9691
+syn105,মাথাঘোরা,SYMPTOM,0.6348
+syn105,গত তিন সপ্তাহ ধরে,TEMPORAL,0.9729
+syn085,বমি,SYMPTOM,0.9521
+syn085,গত পাঁচ দিন ধরে,TEMPORAL,0.9727
+syn211,গত ছয় দিন ধরে,TEMPORAL,0.9738
+syn211,প্রস্রাবে জ্বালা,SYMPTOM,0.694
+syn211,মূ,DIAGNOSIS,0.8281
+syn211,##ত্র,DIAGNOSIS,0.4178
+syn211,##নাল,DIAGNOSIS,0.4352
+syn211,##ির সংক্রমণ,DIAGNOSIS,0.3279
+syn168,এমআরআই,TEST,0.8911
+syn168,অস্বাভাবিক,TEST_RESULT,0.9463
+syn168,কোমরে,BODY_SITE,0.8656
+syn168,নেই,NEGATION_UNCERTAINTY,0.5207
+syn262,কয়েক মাস ধরে,TEMPORAL,0.9722
+syn262,কোষ,SYMPTOM,0.9517
+syn262,##্ঠকাঠিন্য,SYMPTOM,0.3804
+syn262,জ্বর,SYMPTOM,0.9533
+syn262,বুকব্যথা,SYMPTOM,0.6096
+syn262,অনুপস্থিত,NEGATION_UNCERTAINTY,0.9071
+syn262,টাই,DIAGNOSIS,0.8678
+syn262,##ফয়েড,DIAGNOSIS,0.4212
+syn262,সেফ,MEDICATION,0.926
+syn262,##িক্স,MEDICATION,0.5593
+syn262,##িম,DOSAGE,0.5157
+syn262,৪০০ মিগ্র,DOSAGE,0.7292
+syn262,##া,TEMPORAL,0.2382
+syn262,দিনে দুইবার,TEMPORAL,0.9696
+syn262,ইনজেকশন,PROCEDURE,0.5073
+syn450,বুকের এক্স - রে,TEST,0.9156
+syn450,অস্বাভাবিক,TEST_RESULT,0.9448
+syn450,থুতু পরীক্ষা,TEST,0.9188
+syn450,নেগেটিভ,TEST_RESULT,0.9365
+syn450,বুকের এক্স - রে,TEST,0.9162
+syn347,আজ সকাল থেকে,TEMPORAL,0.9683
+syn347,মাথাব্যথা,SYMPTOM,0.9608
+syn347,মাথাঘোরা,SYMPTOM,0.6267
+syn347,নেই,NEGATION_UNCERTAINTY,0.9098
+syn347,শরীর দুর্বল,SYMPTOM,0.7648
+syn365,সন্ধ্যা ৬টায়,TEMPORAL,0.9688
+syn365,রক্তচাপ,TEST,0.9277
+syn365,১১০ / ৭০,TEST_RESULT,0.8936
+syn365,অক্সিজেন স্যাচুরেশন,TEST,0.8979
+syn365,৯৮ শতাংশ,TEST_RESULT,0.9108
+syn365,প্যারাস,MEDICATION,0.9185
+syn365,##িটা,MEDICATION,0.5551
+syn365,##মল,DOSAGE,0.3432
+syn365,৫০০ মিগ্র,DOSAGE,0.7184
+syn365,##া,TEST_RESULT,0.1582
+syn365,গায়েব্যথা,SYMPTOM,0.5264
+syn365,প্লাস্ট,PROCEDURE,0.4829
+syn365,##ার,DIAGNOSIS,0.1893
+syn530,গত চার দিন ধরে,TEMPORAL,0.9735
+syn530,কোমরব্যথা,SYMPTOM,0.607
+syn426,গতকাল সন্ধ্যা থেকে,TEMPORAL,0.9696
+syn426,কানব্যথা,SYMPTOM,0.6267
+syn426,জ্বর,SYMPTOM,0.9594
+syn337,গত তিন দিন ধরে,TEMPORAL,0.9746
+syn337,হাঁটুব্য,SYMPTOM,0.6586
+syn337,##থা,SYMPTOM,0.3806
+syn337,বাম,BODY_SITE,0.7964
+syn337,হাঁটু,BODY_SITE,0.4023
+syn337,##তে,BODY_SITE,0.3542
+syn337,ব্যথা,SYMPTOM,0.9568
+syn337,ডাই,MEDICATION,0.9146
+syn337,##ক্ল,MEDICATION,0.6769
+syn337,##ো,MEDICATION,0.4507
+syn337,##ফে,DOSAGE,0.246
+syn337,##নাক,DOSAGE,0.3377
+syn337,হাঁটুব্য,SYMPTOM,0.672
+syn337,##থা,SYMPTOM,0.3447
+syn337,না,NEGATION_UNCERTAINTY,0.9006
+syn223,থাইরয়েড পরীক্ষা,TEST,0.8204
+syn223,বেশি,TEST_RESULT,0.9202
+syn034,প্যারাস,MEDICATION,0.8942
+syn034,##িটা,MEDICATION,0.2887
+syn034,##মল,TEST,0.1229
+syn034,না,NEGATION_UNCERTAINTY,0.6521
+syn034,নিশ্চিত নয়,NEGATION_UNCERTAINTY,0.5743
+syn272,মাথাব্যথা,SYMPTOM,0.9612
+syn272,নেই,NEGATION_UNCERTAINTY,0.9073
+syn272,শরীর দুর্বল,SYMPTOM,0.7498
+syn272,কোমরে,BODY_SITE,0.8717
+syn272,ব্যথা,SYMPTOM,0.957
+syn534,গত দুই দিন ধরে,TEMPORAL,0.9731
+syn534,বমিভাব,SYMPTOM,0.6904
+syn071,গত রাতে,TEMPORAL,0.9668
+syn071,বুকব্যথা,SYMPTOM,0.5901
+syn071,অ্যাজমা,DIAGNOSIS,0.5762
+syn311,পাতলা পায়খানা,SYMPTOM,0.7868
+syn311,হয়নি,NEGATION_UNCERTAINTY,0.8986
+syn311,প্রায় এক মাস ধরে,TEMPORAL,0.9722
+syn311,জ্বর,SYMPTOM,0.9574
+syn311,যক্ষ্মা,DIAGNOSIS,0.6432
+syn311,প্রতিদিন,TEMPORAL,0.921
+syn311,রিফ,MEDICATION,0.907
+syn311,##াম্প,MEDICATION,0.5408
+syn311,##িসি,MEDICATION,0.2324
+syn311,##ন,DOSAGE,0.2631
+syn363,আয়রন,TEST,0.6156
+syn363,হিমোগ্লোবিন,TEST,0.7631
+syn363,৬. ৮,TEST_RESULT,0.8045
+syn031,গত এক সপ্তাহ ধরে,TEMPORAL,0.9729
+syn031,কাশি,SYMPTOM,0.9601
+syn031,উচ্চ রক্তচাপ,DIAGNOSIS,0.6109
+syn141,গত চার দিন ধরে,TEMPORAL,0.9738
+syn141,পেটব্যথা,SYMPTOM,0.5838
+syn141,পাক,BODY_SITE,0.8704
+syn141,##স্থল,BODY_SITE,0.6015
+syn141,##ীতে,BODY_SITE,0.4493
+syn186,একজিমা,DIAGNOSIS,0.6413
+syn186,নিশ্চিত নয়,NEGATION_UNCERTAINTY,0.6222
+syn186,অ্যালার্জি পরীক্ষা,TEST,0.8518
+syn273,জ্বর,SYMPTOM,0.9544
+syn273,মল পরীক্ষা,TEST,0.9188
+syn273,পজিটিভ,TEST_RESULT,0.9492
+syn273,কাশি,SYMPTOM,0.9536
+syn273,নেই,NEGATION_UNCERTAINTY,0.8994
+syn273,তিন দিন পরে,TEMPORAL,0.9719
+syn503,এনএস১ অ্যান্টিজেন,TEST,0.8085
+syn503,পজিটিভ,TEST_RESULT,0.944
+syn503,এনএস১ অ্যান্টিজেন,TEST,0.806
+syn395,গত দুই দিন ধরে,TEMPORAL,0.9745
+syn395,টক ঢেকুর,SYMPTOM,0.4936
+syn395,বমিভাব,SYMPTOM,0.6726
+syn395,পেটব্যথা,SYMPTOM,0.6391
+syn395,পেপ,DIAGNOSIS,0.8379
+syn395,##টিক আলসার,DIAGNOSIS,0.3092
+syn395,সন্দেহ,NEGATION_UNCERTAINTY,0.8821
+syn395,আল্ট্রাসনোগ্রাফি,TEST,0.7945
+syn395,স্বাভাবিক,TEST_RESULT,0.9453
+syn395,এন্ডোস্কপি,TEST,0.5532
+syn350,আজ ভোরে,TEMPORAL,0.965
+syn350,কানের পরীক্ষা,TEST,0.9182
+syn350,অস্বাভাবিক,TEST_RESULT,0.947
+syn350,কানের সংক্রমণ,DIAGNOSIS,0.5792
+syn375,জ্বর,SYMPTOM,0.9455
+syn407,গত শুক্রবার থেকে,TEMPORAL,0.9703
+syn407,দুর্বলতা,SYMPTOM,0.958
+syn407,বমি,SYMPTOM,0.9579
+syn407,ও,MEDICATION,0.8685
+syn407,##আর,MEDICATION,0.2047
+syn407,##এস,TEST,0.1584
+syn407,দুর্বলতা,SYMPTOM,0.9582
+syn407,না,NEGATION_UNCERTAINTY,0.8914
+syn133,ইসিজি,TEST,0.9167
+syn133,অস্বাভাবিক,TEST_RESULT,0.9474
+syn133,এক মাস পরে,TEMPORAL,0.9703
+syn076,বুকব্যথা,SYMPTOM,0.5754
+syn076,অ্যাজমা,DIAGNOSIS,0.6291
+syn076,নিশ্চিত নয়,NEGATION_UNCERTAINTY,0.6253
+syn173,এমআরআই,TEST,0.8868
+syn173,অস্বাভাবিক,TEST_RESULT,0.9471
+syn173,দুই সপ্তাহ পরে,TEMPORAL,0.9704
+syn528,অতিরিক্ত,SYMPTOM,0.9094
+syn528,পিপাসা,SYMPTOM,0.5388
+syn528,শ্বাসকষ্ট,SYMPTOM,0.9595
+syn528,নেই,NEGATION_UNCERTAINTY,0.902
+syn528,রক্তচাপ,TEST,0.9256
+syn528,১১০ / ৭০,TEST_RESULT,0.8971
+syn056,মাথাব্যথা,SYMPTOM,0.9585
+syn056,নিউমোনিয়া,DIAGNOSIS,0.6401
+syn056,নিশ্চিত নয়,NEGATION_UNCERTAINTY,0.6236
+syn522,আজ,TEMPORAL,0.9595
+syn522,আজ সকাল থেকে,TEMPORAL,0.9707
+syn522,রক্তক্ষরণ,SYMPTOM,0.9442
+syn522,জ্বর,SYMPTOM,0.9584
+syn522,পেটব্যথা,SYMPTOM,0.5777
+syn522,অস্বীকার,NEGATION_UNCERTAINTY,0.902
+syn522,ক্ষত কালচার,TEST,0.8946
+syn522,হয়নি,NEGATION_UNCERTAINTY,0.882
+syn522,কাটা ক্ষত,DIAGNOSIS,0.5731
+syn522,ক্ষত,SYMPTOM,0.395
+syn522,পনেরো দিন পরে,TEMPORAL,0.9705
+syn522,প্যারাস,MEDICATION,0.9204
+syn522,##িটা,MEDICATION,0.5035
+syn522,##মল,DOSAGE,0.3635
+syn522,৫০০ মিগ্র,DOSAGE,0.7173
+syn522,##া,TEMPORAL,0.1522
+syn522,ব্যথা,SYMPTOM,0.6591
+syn522,তিন দিন,TEMPORAL,0.9683
+syn077,গলা,BODY_SITE,0.853
+syn077,বুকের এক্স - রে,TEST,0.9191
+syn077,উচ্চ,TEST_RESULT,0.9451
+syn094,সেফ,MEDICATION,0.9263
+syn094,##িক্স,MEDICATION,0.5886
+syn094,##িম,DOSAGE,0.4909
+syn094,২০০ মিগ্র,DOSAGE,0.7084
+syn094,##া,TEMPORAL,0.1806
+syn094,না,NEGATION_UNCERTAINTY,0.8297
+syn138,অ্যাঞ্জিওগ্রাফি,TEST,0.489
+syn138,এক সপ্তাহ পরে,TEMPORAL,0.9726
+syn090,ইনজেকশন,PROCEDURE,0.4575
+syn090,ওয়াইডাল পরীক্ষা,TEST,0.7908
+syn377,ভোর ৪টায়,TEMPORAL,0.9677
+syn377,তাপমাত্রা,TEST,0.9165
+syn377,৯৯ ডিগ্রি,TEST_RESULT,0.9063
+syn377,অক্সিজেন স্যাচুরেশন,TEST,0.9042
+syn377,৯৮ শতাংশ,TEST_RESULT,0.9119
+syn377,ক্লান্তি,SYMPTOM,0.9551
+syn377,অ্যাট,MEDICATION,0.9131
+syn377,##েন,MEDICATION,0.6268
+syn377,##োল,MEDICATION,0.4949
+syn377,##ল,DOSAGE,0.5606
+syn377,৫০ মিগ্র,DOSAGE,0.7279
+syn377,##া,TEMPORAL,0.1182
+syn228,থাইরয়েড পরীক্ষা,TEST,0.8531
+syn228,বেশি,TEST_RESULT,0.9133
+syn228,ঘাড়ে,BODY_SITE,0.8609
+syn479,নেব,PROCEDURE,0.5139
+syn479,##ুলা,PROCEDURE,0.1789
+syn479,##ইজেশন,TEST,0.333
+syn479,পিক ফ্লো,TEST,0.8803
+syn479,স্বাভাবিকের চেয়ে,TEST_RESULT,0.6742
+syn479,কম,TEST_RESULT,0.6103
+syn479,স্যাল,MEDICATION,0.9131
+syn479,##বি,MEDICATION,0.3861
+syn479,##উট,MEDICATION,0.4074
+syn479,##াম,DOSAGE,0.281
+syn479,##ল,DOSAGE,0.5479
+syn479,ইন,MEDICATION,0.1884
+syn479,##হেলার,TEST,0.2725
+syn508,গত দুই দিন ধরে,TEMPORAL,0.9742
+syn508,শ্বাসকষ্ট,SYMPTOM,0.957
+syn508,বুকব্য,SYMPTOM,0.7216
+syn508,##থা,SYMPTOM,0.3983
+syn508,ধড়ফড়ানি,SYMPTOM,0.5625
+syn508,হৃদরোগ,DIAGNOSIS,0.6423
+syn508,সন্দেহ,NEGATION_UNCERTAINTY,0.8698
+syn508,ট্র,MEDICATION,0.534
+syn508,##পো,MEDICATION,0.2807
+syn508,##নি,MEDICATION,0.1969
+syn508,##ন,TEST,0.1787
+syn508,বেশি,TEST_RESULT,0.8367
+syn508,ক্লো,MEDICATION,0.9116
+syn508,##পিড,MEDICATION,0.7124
+syn508,##োগ্র,MEDICATION,0.3605
+syn508,##েল,DOSAGE,0.5892
+syn508,৭৫ মিগ্র,DOSAGE,0.7116
+syn508,##া,TEST_RESULT,0.1605
+syn508,মাথাঘোরা,SYMPTOM,0.6271
+syn508,পাতলা পায়খানা,SYMPTOM,0.7422
+syn508,অনুপস্থিত,NEGATION_UNCERTAINTY,0.9028
+syn508,অ্যাঞ্জিওগ্রাফি,TEST,0.6469
+syn229,অনিদ্রা,SYMPTOM,0.6843
+syn229,ওজনবৃদ্ধি,SYMPTOM,0.6256
+syn229,ঘাড়ে,BODY_SITE,0.8697
+syn523,চোখের চাপ পরীক্ষা,TEST,0.9136
+syn523,স্বাভাবিক,TEST_RESULT,0.9446
+syn523,ছানি পড়া,DIAGNOSIS,0.5698
+syn523,নিশ্চিত নয়,NEGATION_UNCERTAINTY,0.6204
+syn083,ওয়াইডাল পরীক্ষা,TEST,0.817
+syn083,পজিটিভ,TEST_RESULT,0.944
+syn181,গত দশ দিন ধরে,TEMPORAL,0.9735
+syn181,চুল,SYMPTOM,0.9575
+syn181,##কানি,SYMPTOM,0.452
+syn181,ত্বকে,BODY_SITE,0.8847
+syn477,সম্ভবত,NEGATION_UNCERTAINTY,0.8485
+syn477,হে,DIAGNOSIS,0.8518
+syn477,##পাটাইটিস,DIAGNOSIS,0.4803
+syn477,সিল,MEDICATION,0.9209
+syn477,##িমার,MEDICATION,0.6249
+syn477,##িন,DOSAGE,0.4863
+syn477,১৪০ মিগ্র,DOSAGE,0.7416
+syn477,##া,TEMPORAL,0.1623
+syn477,দিনে তিনবার,TEMPORAL,0.9671
+syn477,এক মাস,TEMPORAL,0.9682
+syn080,শর্করা,TEST,0.6455
+syn080,বেশি,TEST_RESULT,0.9205
+syn080,অ্যাজমা,DIAGNOSIS,0.6137
+syn366,প্রায় এক মাস ধরে,TEMPORAL,0.9724
+syn366,কাশি,SYMPTOM,0.9585
+syn366,না,NEGATION_UNCERTAINTY,0.8833
+syn366,কাশি,SYMPTOM,0.9366
+syn366,ভাইরাল জ্বর,DIAGNOSIS,0.5917
+syn384,কাশি,SYMPTOM,0.9601
+syn384,বুকব্য,SYMPTOM,0.7385
+syn384,##থা,SYMPTOM,0.5023
+syn384,মাথাব্যথা,SYMPTOM,0.9609
+syn384,অনুপস্থিত,NEGATION_UNCERTAINTY,0.9029
+syn384,তিন দিন পরে,TEMPORAL,0.9714
+syn185,চুল,SYMPTOM,0.9566
+syn185,##কানি,SYMPTOM,0.3619
+syn185,গত দশ দিন ধরে,TEMPORAL,0.973
+syn349,ভাইরাল জ্বর,DIAGNOSIS,0.6457
+syn349,প্যারাস,MEDICATION,0.9249
+syn349,##িটা,MEDICATION,0.586
+syn349,##মল,MEDICATION,0.3124
+syn349,৫০০ মিগ্র,DOSAGE,0.7328
+syn349,##া,TEST_RESULT,0.1577
+syn349,দিনে তিনবার,TEMPORAL,0.9678
+syn349,পাঁচ দিন,TEMPORAL,0.9687
+syn349,সেটির,MEDICATION,0.9268
+syn349,##িজি,MEDICATION,0.543
+syn349,##ন,DOSAGE,0.5058
+syn349,১০ মিগ্র,DOSAGE,0.728
+syn349,##া,TEMPORAL,0.1666
+syn349,রাতে,TEMPORAL,0.958
+syn349,পাঁচ দিন,TEMPORAL,0.9692
+syn349,আরটিপিসিআর,TEST,0.7451
+syn491,পাতলা পায়খানা,SYMPTOM,0.778
+syn491,নেই,NEGATION_UNCERTAINTY,0.904
+syn491,শরীর দুর্বল,SYMPTOM,0.7662
+syn154,ওম,MEDICATION,0.9262
+syn154,##িপ,MEDICATION,0.6197
+syn154,##্রাজ,MEDICATION,0.4611
+syn154,##ল,DOSAGE,0.6441
+syn154,২০ মিগ্র,DOSAGE,0.7024
+syn154,##া,TEMPORAL,0.1835
+syn154,না,NEGATION_UNCERTAINTY,0.8276
